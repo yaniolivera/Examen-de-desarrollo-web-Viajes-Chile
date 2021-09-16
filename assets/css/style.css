@@ -10,6 +10,10 @@ body {
 .my-nav {
   z-index: 10;
   width: 100%;
+  
+}
+.navbar-dark {
+    transition: all 1s ease;
 }
 
 .carousel-item {
@@ -24,6 +28,10 @@ body {
 .icon {
   text-decoration: none;
   color: #ffffff;
+}
+
+section{
+    padding-top:64px !important;
 }
 
 /* Small devices (landscape phones, 576px and up) */
