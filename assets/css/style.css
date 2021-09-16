@@ -1,17 +1,52 @@
 body {
-  background-color: #000;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hrClass {
+  margin-top: 2rem;
 }
 
 .my-nav {
-  z-index: 2000;
+  z-index: 10;
   width: 100%;
 }
+
 .carousel-item {
   background: no-repeat center center scroll;
   background-size: cover;
 }
 
 .color-card {
-    background-color: #17a2b8;
+  background-color: #17a2b8;
 }
+
+.icon {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .card-img-top {
+        height: 50vw;
+    }
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .card-img-top {
+        height: 24vw;
+    }
+  }
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .card-img-top {
+        height: 11vw;
+    }
+  }
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .card-img-top {
+        height: 24vh;
+    }
+  }
