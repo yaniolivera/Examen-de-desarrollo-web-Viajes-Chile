@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yanina Olivera">
+    <meta name="description" content="Disfruta de Chile. Vive su naturaleza, gastronomia, playas y viñas | Conoce  Rapa nui, Iquique, La Serena, Pucon, Valdivia, San pedro, Valparaiso, Puerto Varas">
+    <meta name="keywords" content="viaje, chile ,playa, rapanui, viñas ">
     <title>Viajes-Chile</title>
     <!--boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -13,7 +15,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!--google fonts-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
     <!-- mi css-->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -25,23 +29,29 @@
             <div class="container">
                 <img src="assets/img/viajes.svg" alt="logo del sitio web" style="height: 3rem;">
                 <a class="navbar-brand" href="#">Viajes Chile</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#inicioSection">Inicio<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#inicioSection" data-toggle="collapse"
+                                data-target=".navbar-collapse.show">Inicio</a>
                         </li>
                         <li class="nav-item d-none d-sm-block">
-                            <a class="nav-link " href="#somosSection">Quienes Somos</a>
+                            <a class="nav-link" href="#somosSection" data-toggle="collapse"
+                                data-target=".navbar-collapse.show">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#destacadosSection">Destacados</a>
+                            <a class="nav-link" href="#destacadosSection" data-toggle="collapse"
+                                data-target=".navbar-collapse.show">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contactoSection">Contacto</a>
+                            <a class="nav-link" href="#contactoSection" data-toggle="collapse"
+                                data-target=".navbar-collapse.show">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -80,16 +90,37 @@
             <hr class="hrClass color-card" />
             <div class="row">
                 <div class="col-xs-12 col-ms-12 col-md-4 col-lg-4">
-                    <span class="badge badge-secondary color-card w-100" ><i class="fas fa-mountain fa-2x"></i></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut iaculis tellus, non mattis velit. Nullam vulputate felis in nibh vehicula semper. Mauris egestas magna posuere risus egestas porttitor. Curabitur ac vehicula magna, quis fermentum orci. Proin tempus efficitur suscipit. Duis scelerisque, nisi nec bibendum dapibus, metus elit blandit turpis, id efficitur nulla lacus vitae risus. Pellentesque consectetur elit ac ligula dignissim, id porttitor orci volutpat. Nullam tortor dui, porttitor in posuere nec, pulvinar in magna. Praesent ornare ligula non odio tincidunt egestas vitae sed neque. Quisque felis leo, fermentum lacinia quam nec, auctor viverra.</p>
+                    <span class="badge badge-secondary color-card w-100"><i class="fas fa-mountain fa-2x"></i></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut iaculis tellus, non mattis
+                        velit. Nullam vulputate felis in nibh vehicula semper. Mauris egestas magna posuere risus
+                        egestas porttitor. Curabitur ac vehicula magna, quis fermentum orci. Proin tempus efficitur
+                        suscipit. Duis scelerisque, nisi nec bibendum dapibus, metus elit blandit turpis, id efficitur
+                        nulla lacus vitae risus. Pellentesque consectetur elit ac ligula dignissim, id porttitor orci
+                        volutpat. Nullam tortor dui, porttitor in posuere nec, pulvinar in magna. Praesent ornare ligula
+                        non odio tincidunt egestas vitae sed neque. Quisque felis leo, fermentum lacinia quam nec,
+                        auctor viverra.</p>
                 </div>
                 <div class="col-xs-12 col-ms-12 col-md-4 col-lg-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut iaculis tellus, non mattis velit. Nullam vulputate felis in nibh vehicula semper. Mauris egestas magna posuere risus egestas porttitor. Curabitur ac vehicula magna, quis fermentum orci. Proin tempus efficitur suscipit. Duis scelerisque, nisi nec bibendum dapibus, metus elit blandit turpis, id efficitur nulla lacus vitae risus. Pellentesque consectetur elit ac ligula dignissim, id porttitor orci volutpat. Nullam tortor dui, porttitor in posuere nec, pulvinar in magna. Praesent ornare ligula non odio tincidunt egestas vitae sed neque. Quisque felis leo, fermentum lacinia quam nec, auctor viverra.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut iaculis tellus, non mattis
+                        velit. Nullam vulputate felis in nibh vehicula semper. Mauris egestas magna posuere risus
+                        egestas porttitor. Curabitur ac vehicula magna, quis fermentum orci. Proin tempus efficitur
+                        suscipit. Duis scelerisque, nisi nec bibendum dapibus, metus elit blandit turpis, id efficitur
+                        nulla lacus vitae risus. Pellentesque consectetur elit ac ligula dignissim, id porttitor orci
+                        volutpat. Nullam tortor dui, porttitor in posuere nec, pulvinar in magna. Praesent ornare ligula
+                        non odio tincidunt egestas vitae sed neque. Quisque felis leo, fermentum lacinia quam nec,
+                        auctor viverra.</p>
                     <span class="badge badge-secondary color-card  w-100"><i class="fas fa-plane fa-2x"></i></span>
                 </div>
                 <div class="col-xs-12 col-ms-12 col-md-4 col-lg-4">
                     <span class="badge badge-secondary color-card w-100"><i class="fas fa-route fa-2x"></i></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut iaculis tellus, non mattis velit. Nullam vulputate felis in nibh vehicula semper. Mauris egestas magna posuere risus egestas porttitor. Curabitur ac vehicula magna, quis fermentum orci. Proin tempus efficitur suscipit. Duis scelerisque, nisi nec bibendum dapibus, metus elit blandit turpis, id efficitur nulla lacus vitae risus. Pellentesque consectetur elit ac ligula dignissim, id porttitor orci volutpat. Nullam tortor dui, porttitor in posuere nec, pulvinar in magna. Praesent ornare ligula non odio tincidunt egestas vitae sed neque. Quisque felis leo, fermentum lacinia quam nec, auctor viverra.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut iaculis tellus, non mattis
+                        velit. Nullam vulputate felis in nibh vehicula semper. Mauris egestas magna posuere risus
+                        egestas porttitor. Curabitur ac vehicula magna, quis fermentum orci. Proin tempus efficitur
+                        suscipit. Duis scelerisque, nisi nec bibendum dapibus, metus elit blandit turpis, id efficitur
+                        nulla lacus vitae risus. Pellentesque consectetur elit ac ligula dignissim, id porttitor orci
+                        volutpat. Nullam tortor dui, porttitor in posuere nec, pulvinar in magna. Praesent ornare ligula
+                        non odio tincidunt egestas vitae sed neque. Quisque felis leo, fermentum lacinia quam nec,
+                        auctor viverra.</p>
                 </div>
             </div>
         </div>
@@ -100,106 +131,112 @@
             <div class="container mb-5">
                 <h2 class="display-4 font-weight-regular text-center my-4">Destacados</h2>
                 <hr class="hrClass color-card" />
-                    <div class="row">
-                        <div class="col-xs-12 col-ms-12 col-md-6 col-lg-3 d-flex align-items-stretch">
-                            <div class="card mt-3 mb-3">
-                                <img class="card-img-top" src="assets/img/card1.jpg" alt="Card image cap" />
-                                <div class="card-body color-card">
-                                    <h4 class="card-title overElement text-left">Lorem ipsum dolor sit amet.</h4>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit mi, eget
-                                        semper
-                                        risus vestibulum vel. Mauris malesuada
-                                    </p>
-                                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-ms-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+                        <div class="card mt-3 mb-3">
+                            <img class="card-img-top" src="assets/img/card1.jpg" alt="Card image cap" />
+                            <div class="card-body color-card">
+                                <h4 class="card-title overElement text-left">Lorem ipsum dolor sit amet.</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit mi, eget
+                                    semper
+                                    risus vestibulum vel. Mauris malesuada
+                                </p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-ms-12 col-md-6 col-lg-3 d-flex align-items-stretch">
-                            <div class="card mt-3 mb-3">
-                                <img class="card-img-top" src="assets/img/card2.jpg" alt="Card image cap" />
-                                <div class="card-body color-card">
-                                    <h4 class="card-title overElement text-left">Lorem ipsum dolor.</h4>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit mi, eget
-                                        semper
-                                        risus vestibulum vel. Mauris malesuada
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-ms-12 col-md-6 col-lg-3 d-flex align-items-stretch">
-                            <div class="card mt-3 mb-3">
-                                <img class="card-img-top" src="assets/img/card3.jpg" alt="Card image cap" />
-                                <div class="card-body color-card">
-                                    <h4 class="card-title overElement text-left">Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing.
-                                    </h4>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit mi, eget
-                                        semper
-                                        risus vestibulum vel. Mauris malesuada
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-ms-12 col-md-6 col-lg-3 d-flex align-items-stretch">
-                            <div class="card mt-3 mb-3">
-                                <img class="card-img-top" src="assets/img/card4.jpg" alt="Card image cap" />
-                                <div class="card-body color-card">
-                                    <h4 class="card-title overElement text-left">Lorem ipsum dolor sit amet.</h4>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit mi, eget
-                                        semper
-                                        risus vestibulum vel. Mauris malesuada
-                                    </p>
-                                </div>
-                            </div>
-                        </div>       
                     </div>
+                    <div class="col-xs-12 col-ms-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+                        <div class="card mt-3 mb-3">
+                            <img class="card-img-top" src="assets/img/card2.jpg" alt="Card image cap" />
+                            <div class="card-body color-card">
+                                <h4 class="card-title overElement text-left">Lorem ipsum dolor.</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit mi, eget
+                                    semper
+                                    risus vestibulum vel. Mauris malesuada
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-ms-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+                        <div class="card mt-3 mb-3">
+                            <img class="card-img-top" src="assets/img/card3.jpg" alt="Card image cap" />
+                            <div class="card-body color-card">
+                                <h4 class="card-title overElement text-left">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing.
+                                </h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit mi, eget
+                                    semper
+                                    risus vestibulum vel. Mauris malesuada
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-ms-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+                        <div class="card mt-3 mb-3">
+                            <img class="card-img-top" src="assets/img/card4.jpg" alt="Card image cap" />
+                            <div class="card-body color-card">
+                                <h4 class="card-title overElement text-left">Lorem ipsum dolor sit amet.</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida velit mi, eget
+                                    semper
+                                    risus vestibulum vel. Mauris malesuada
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- Seccion contacto-->
-    
-    <section id= "contactoSection" class="container my-5">
+
+    <section id="contactoSection" class="container my-5">
         <h2 class="display-4 font-weight-regular text-center my-4">Contacto</h2>
         <hr class="hrClass color-card" />
         <div class="typeform-widget" data-url="https://vnytags4qxu.typeform.com/to/E7mfjYLL"></div>
-            <div data-tf-widget="E7mfjYLL" style="width:100%;height:400px;"></div><script src="https://embed.typeform.com/next/embed.js"></script>   
+        <div data-tf-widget="E7mfjYLL" style="width:100%;height:400px;"></div>
+        <script src="https://embed.typeform.com/next/embed.js"></script>
     </section>
 
     <!-- Footeer-->
-
-    <footer>
-        <!--seccion tarjetas de credito cambiar el style que esta aqui adentro-->
-        <nav class="navbar navbar-expand-lg navbar-light color-card" >
-            <div class="container-fluid ">
-                <div class="container ">
-                   <h3>VIAJES CHILE</h3>
-                       <div class="navbar-nav d-flex flex-row">
-                                <a href="https://github.com" target="_blank" class="icon m-2" ><i class="fab fa-github-square fa-2x"></i></a>
-                                <a href="https://twitter.com" target="_blank" class="icon m-2"><i class="fab fa-twitter-square fa-2x"></i></a>
-                                <a href="https://www.linkedin.com" target="_blank"class="icon m-2"><i class="fab fa-linkedin fa-2x"></i></a>
-                                <a href="https://www.facebook.com"target="_blank"class="icon m-2"><i class="fab fa-facebook-square fa-2x"></i></a>
-                       </div>
+    <!--seccion tarjetas de credito -->
+    <footer class="color-card ">
+        <div class="container-fluid ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-xs-12 col-ms-12 col-md-6 col-lg-6 p-3 text-center">
+                        <h3>VIAJES CHILE</h3>
+                    </div>
+                    <div class="col-xs-12 col-ms-12 col-md-6 col-lg-6 p-3 text-center ">
+                        <a href="https://github.com" target="_blank" class="icon m-2"><i
+                                class="fab fa-github-square fa-2x"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="icon m-2"><i
+                                class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="icon m-2"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" class="icon m-2"><i
+                                class="fab fa-facebook-square fa-2x"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </nav>
     </footer>
-        <!--jquery-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <!--popper-->
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <!--boostrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-            crossorigin="anonymous"></script>
-        <!--Mi scrip-->
-        <script src="assets/js/scrip.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--popper-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!--boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <!--Mi scrip-->
+    <script src="assets/js/scrip.js"></script>
 </body>
-
 </html>
