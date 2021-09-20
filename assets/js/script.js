@@ -18,6 +18,7 @@ $("nav ul li a[href^='#']").on('click', function (e) {
     });
 
 });
+// change color menu 
 $(window).scroll(function () {
     if ($("#menu").offset().top > 56) {
         $("#menu").addClass("bg-info");
